@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery - tp-events</title>
+    <link rel="stylesheet" href="tp-events.css">
+</head>
+<body>
+
+    <!-- <h1>TP - evènements</h1>
+
+
+    <div class="exo">
+        <h2>Super nintendo Joypad</h2>
+        <p>Reproduire la maquette joypad en html-css.</p>
+        <p>JS : Faire en sorte qu'en appuyant sur un chaque bouton de couleur, la lettre associée au bouton change pour prendre la même couleur (ex: En appyant sur le bouton rouge, la lettre A passe au rouge. En relâchant, le bouton, la lettre redevient grise).</p>
+        
+        </div>
+    </div> -->
+
+
+    <div class="BigRound">
+        <div class="row1">
+            <span class="letter1">X</span>
+            <div class="ovals">
+                <button class="green"></button>
+                <button class="blue"></button>
+            </div>
+            <span class="letter2">Y</span>
+        </div>
+        <div class="row2">
+            <span class="letter3">B</span>
+            <div class="ovals">
+                <button class="yellow"></button>
+                <button class="red"></button>
+            </div>
+            <span class="letter4">A</span>
+        </div>
+    </div>
+
+    
+
+    <script>
+        
+window.onload = function(){
+
+    var letter1 = document.querySelector('.letter1');
+    var greenButton = document.querySelector('.green');
+
+    greenButton.addEventListener('mousedown', function() {
+      letter1.style.color = '#008351'; 
+    });
+
+    greenButton.addEventListener('mouseup', function() {
+      letter1.style.color = ''; 
+    });
+
+
+
+
+    var letter2 = document.querySelector('.letter2');
+    var blueButton = document.querySelector('.blue');
+
+
+    blueButton.addEventListener('mousedown', function() {
+      letter2.style.color = '#0042AB';
+    });
+
+
+    blueButton.addEventListener('mouseup', function() {
+      letter2.style.color = ''; 
+    });
+
+
+
+
+    var letter3 = document.querySelector('.letter3');
+    var yellowButton = document.querySelector('.yellow');
+
+
+    yellowButton.addEventListener('mousedown', function() {
+      letter3.style.color = '#DCB127';
+    });
+
+
+    yellowButton.addEventListener('mouseup', function() {
+      letter3.style.color = ''; 
+    });
+
+
+
+
+    var letter4 = document.querySelector('.letter4');
+    var redButton = document.querySelector('.red');
+
+    redButton.addEventListener('mousedown', function() {
+      letter4.style.color = '#BC0519';
+    });
+
+
+    redButton.addEventListener('mouseup', function() {
+      letter4.style.color = '';
+    });
+
+
+
+}
+
+
+
+
+    </script>
+    
+</body>
+</html>
